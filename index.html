@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #00aaff, #ffffff);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #005f99;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #location-form {
+            margin-top: 10px;
+        }
+
+        #location-input {
+            padding: 10px;
+            width: 200px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ffaa00;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e69900;
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #current-weather, #forecast {
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #005f99;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Weather App</h1>
+        <form id="location-form">
+            <input type="text" id="location-input" placeholder="Enter a city or zip code" required>
+            <button type="submit">Get Weather</button>
+        </form>
+    </header>
+
+    <main>
+        <section id="current-weather">
+            <h2>Current Weather</h2>
+            <div id="weather-details">
+                <!-- Weather details like temperature, condition, humidity, etc., will be inserted here -->
+            </div>
+        </section>
+
+        <section id="forecast">
+            <h2>Weather Forecast</h2>
+            <div id="forecast-details">
+                <!-- Weather forecast for the next few days will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Weather App. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to handle the weather fetching will go here
+    </script>
+</body>
+</html>

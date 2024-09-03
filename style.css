@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin:0px;
+    padding: 0px;
+    max-height: max-content;
+    height: auto;
+    width: 100vw;
+    background: linear-gradient(135deg, rgb(0, 255, 102) 20.5%, rgb(63, 220, 255) 86.8%);
+}
+header {
+    background-color: #333;
+    background: linear-gradient(135deg, rgb(51, 50, 48) 10.5%, rgb(0, 0, 0) 86.8%);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 0px 20px 10px;
+    color: #fff; 
+    padding: 10px;
+    padding: 5px;
+    text-align: center;
+    font-family: alkatra;
+    text-shadow: 2px 2px 4px #000;
+  }
+
+  .heading {
+    margin: 0;
+    font-size: 36px;
+  }
+
+  marquee {
+    font-size: 15px;
+    font-family:sans-serif;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #333;
+    background: linear-gradient(135deg, rgb(51, 50, 48) 10.5%, rgb(0, 0, 0) 86.8%);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    width: 400px;
+    height: auto;
+    border-radius: 3px;
+@@ -44,6 +51,7 @@ header {
+    margin: 0;
+    font-size: large;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    font-family: sans-serif;
+  }
+
+@@ -60,9 +68,11 @@ header {
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 2%;
+    font-family: sans-serif;
+    background-color: #23d22c;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); 
+@@ -74,8 +84,13 @@ header {
+  }
+
+  .container #result{
+    margin-top: 2rem;
+    color: #fff;
+    font-family: sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 2px 2px 4px #000;
+    font-size: large;
+    line-height: 2rem;
+    padding: 2rem;
+  }
+
+  .footer{
+@@ -86,24 +101,87 @@ header {
+    justify-content: center;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      font-size: 24px;
+    }
+    .container1 {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    input[type="text"] {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .button {
+      display: block;
+    }
+    button {
+      width: 100%;
+    }
+  }
+  /* Mobile devices */
+@media only screen and (max-width: 767px) {
+  /* CSS rules for mobile devices */
+  header {
+    font-size: 24px;
+  }
+  .container{
+   margin-top: 5%;
+   width: 80%;
+   height: auto;
+  }
+  .container1 {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  input[type="text"] {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .button {
+    display: block;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+/* Tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* CSS rules for tablet devices */
+  header {
+    font-size: 24px;
+  }
+  .container{
+   margin-top: 5%;
+   height: auto;
+  }
+  .container1 {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  input[type="text"] {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .button {
+    display: block;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+/* Desktop devices */
+@media only screen and (min-width: 992px) {
+  /* CSS rules for desktop devices */
+  header {
+    font-size: 24px;
+  }
+  .container{
+   margin-top: 5%;
+   height: auto;
+  }
+  .container1 {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  input[type="text"] {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .button {
+    display: block;
+  }
+  button {
+    width: 100%;
+  }
+}
